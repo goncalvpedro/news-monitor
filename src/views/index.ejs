@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latest News</title>
+  <link href="/css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/source/fox-news">Fox News</a></li>
+      <li><a href="/source/google-news">Google News</a></li>
+      <li><a href="/source/the-economist">The Economist</a></li>
+      <!-- Add more categories as needed -->
+    </ul>
+  </nav>
+  <div class="main-content">
+    <% news.forEach(article => { %>
+      <div class="article">
+        <img src="<%= article.urlToImage %>" alt="<%= article.title %>">
+        <div class="article-title"><%= article.title %></div>
+        <div class="article-description"><%= article.description %></div>
+      </div>
+    <% }) %>
+  </div>
+</body>
+</html>
