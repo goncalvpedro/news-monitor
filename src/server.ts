@@ -1,6 +1,6 @@
 import express from 'express';
 import path from 'path';
-import { getLatestNews, getNewsBySource, getAllSources } from './controllers/newsController';
+import { getLatestNews, getNewsBySource } from './controllers/newsController';
 
 const app = express()
 
