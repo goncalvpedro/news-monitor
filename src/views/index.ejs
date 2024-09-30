@@ -3,19 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Latest News</title>
-  <link href="/css/styles.css" rel="stylesheet">
+  <title>Red Pine Portal News</title>
+  <link rel="stylesheet" href="/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Latest Worldwide News</h1>
-  <ul>
-    <% news.forEach(article => { %>
-      <li>
+
+<!--  -->
+  <header>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="./svg/logo.svg" alt="logo" class="navbar-img" id="navbar-logo" />
+        </div>
+        <div class="navbar-query">
+            <form action="#query">
+                <input type="text" placeholder="Search for topics, locations & sources" />
+                <button type="submit" hidden></button>
+            </form>
+        </div>
+        <div class="navbar-icons">
+            <img src="./svg/user.svg" alt="account" class="navbar-img navbar-side-img" id="navbar-account" />
+            <img src="./svg/settings.svg" alt="settings" class="navbar-img navbar-side-img" id="navbar-settings" />
+            <img src="./svg/dark-theme.svg" alt="theme" class="navbar-img navbar-side-img" id="navbar-theme" />
+            <img src="./svg/menu.svg" alt="theme" class="navbar-img navbar-side-img" id="navbar-menu" />
+        </div>
+    </nav>
+
+
+    <nav class="navbar-links">
+        <a href="#top" class="active">Top Headlines</a>
+        <a href="#sports">Sports</a>
+        <a href="#cooking">Cooking</a>
+        <a href="#tech">Technology</a>
+        <a href="#finance">Finance</a>
+        <a href="#entertainment">Entertainment</a>
+    </nav>
+  </header>
+<!--  -->
+
+  <nav class="navbar">
+    <a href="#top">Top Headlines</a>
+    <a href="#sports">Sports</a>
+    <a href="#cooking">Cooking</a>
+    <a href="#tech">Technology</a>
+    <a href="#finance">Finance</a>
+    <a href="#entertainment">Entertainment</a>
+  </nav>
+
+  <div class="headlines">
+    <% topHeadlines.forEach(article => { %>
+      <div class="headline-card">
+        <img src="<%= article.urlToImage %>" alt="News Image">
         <h2><%= article.title %></h2>
         <p><%= article.description %></p>
-        <a href="<%= article.url %>">Read more</a>
-      </li>
+        <a href="<%= article.url %>" target="_blank">Read more</a>
+      </div>
     <% }) %>
-  </ul>
+  </div>
+  
+  <div class="category-section">
+    <div class="category">
+      <h2>Sports</h2>
+      <% sportsNews.forEach(article => { %>
+        <div class="category-card">
+          <img src="<%= article.urlToImage %>" alt="News Image">
+          <a href="<%= article.url %>" target="_blank"><%= article.title %></a>
+        </div>
+      <% }) %>
+    </div>
+    <!-- Add other categories similarly -->
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Red Pine Portal News | Powered by NewsAPI</p>
+  </footer>
+
 </body>
 </html>
