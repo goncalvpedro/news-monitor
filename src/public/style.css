@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Montserrat", sans-serif;
     background-color: #f8f9fa;
     color: #333333;
     margin: 0;
@@ -38,12 +40,9 @@ header {
     padding-top: 10px;
     background-color: white;
     width: 100vw;
-    /* Make the navbar span the entire viewport width */
     box-sizing: border-box;
     padding-left: 20px;
-    /* Optional space on the left side */
     padding-right: 40px;
-    /* Extra space on the right for icons */
 }
 
 .navbar-logo img {
@@ -104,7 +103,7 @@ header {
 .navbar-icons img {
     width: 24px;
     height: 24px;
-    margin-left: 50px; /* Increase space between icons */
+    margin-left: 50px;
     cursor: pointer;
     opacity: 0.7;
     transition: opacity 0.3s ease;
@@ -114,7 +113,6 @@ header {
     opacity: 1;
 }
 
-/* Bottom Navbar Links */
 .navbar-links {
     display: flex;
     justify-content: center;
@@ -122,7 +120,7 @@ header {
     background-color: white;
     border-top: 1px solid #e0e0e0;
     width: 100vw;
-    /* Make bottom navigation span full width */
+
 }
 
 .navbar-links a {
@@ -143,58 +141,49 @@ header {
     border-bottom: 3px solid #4285f4;
 }
 
-/* Main Headline Section */
+/* Main content */
 .hero {
-    padding: 40px 20px;
+    padding: 0 400px;
     text-align: center;
 }
 
-.headlines {
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 1200px;
-}
-
-.headline-card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
+.hero h1 {
+    font-size: 45px;
+    font-weight: 400;
+    position: relative;
     text-align: left;
 }
 
+.hero hr {
+    opacity: 0.25;
+}
+
+.headlines {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.headline-card {
+    height: 350px ;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: white;
+}
+
 .headline-card img {
-    max-width: 100%;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+    margin: 0;
+    width: auto;
+    height: 250px;
 }
 
-.headline-card h2 {
-    padding: 15px 20px;
-    color: #333;
-}
-
-.headline-card p {
-    padding: 0 20px;
-    color: #666;
-}
-
-.headline-card a {
-    display: inline-block;
-    margin: 15px 20px;
-    padding: 10px 15px;
-    background-color: #e74c3c;
-    color: white;
-    text-transform: uppercase;
-    border-radius: 5px;
-    font-weight: 600;
-    text-align: center;
-}
-
-.headline-card a:hover {
-    background-color: #c0392b;
+#news-title {
+    margin: 0;
+    color: rgb(26, 26, 26);
+    font-size: 16px;
+    text-align: left;
+    padding: 0 10px;
 }
 
 /* Categories Section */
@@ -314,5 +303,5 @@ footer a:hover {
     #navbar-menu:hover {
         opacity: 0.7;
     }
-    
+
 }
