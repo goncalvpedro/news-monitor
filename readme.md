@@ -1,6 +1,3 @@
-
----
-
 ## Development Progress
 
 ### Main Page - 60% Complete
@@ -36,6 +33,3 @@ If you have any suggestions, feedback, or need to get in touch, feel free to rea
 **Contact:** Pedro Gonçalves  
 **Email:** pedrogoncalves.ie@gmail.com
 
----
-
-This README provides a clear understanding of the project’s current state, directory structure, and tasks to be completed. Please refer to the relevant sections for more details on individual components.
