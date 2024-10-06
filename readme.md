@@ -1,35 +1,41 @@
-/src  - is the main folder for all the project
 
-/controllers - files that deal with the api itself and its logic
+---
 
-/public - styles and static files
+## Development Progress
 
-/routes - rendering all routes based on api parameters
+### Main Page - 60% Complete
+- [ ] **Align the search box**
+- [ ] **Update `.navbar-links` styling and functionality**
+- [ ] **Adjust the category section layout**
 
-/views - templates with dynamic parameters
+### Secondary Page Routes
+- [ ] **Create routes** for the following secondary pages:
+  - My Account
+  - Settings
+  - Theme
+  - All links specified in `.navbar-links`
 
-index.js - start the server and call all routes and api's
+### User Personalization
+- [ ] **Make "Your Briefing" unique for each user** to enhance personalization.
 
-Next steps:
-[] Main page - 60%
-    * Align search box
-    * Update .navbar-links
-    * Adjust category section
+### Branding & Identity
+- [ ] **Develop a stronger brand identity**, including:
+  - Project Name
+  - Logo Design
+  - Color Scheme
 
-[] Create routes for the secondary pages
-    * My account
-    * Settings
-    * Theme
-    * All links in navbar-links
+### Documentation
+- [ ] **Document the project** to provide clear instructions and explanations for future contributors.
 
-[] Make "Your Briefing" unique for each user
+---
 
-[] Develop a better brand identity
-    * Name
-    * Logo
-    * Colors
+## Contact & Suggestions
 
-[] Document
+If you have any suggestions, feedback, or need to get in touch, feel free to reach out via email:
 
-Suggestions, comments or any contact? 
->> pedrogoncalves.ie@gmail.com <<
+**Contact:** Pedro Gonçalves  
+**Email:** pedrogoncalves.ie@gmail.com
+
+---
+
+This README provides a clear understanding of the project’s current state, directory structure, and tasks to be completed. Please refer to the relevant sections for more details on individual components.
